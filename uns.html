@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unified Namespace (UNS)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #007bff; 
+    }
+
+    h2 {
+      color: #0056b3; 
+    }
+
+    ul {
+      list-style-type: disc; 
+      padding-left: 40px; 
+    }
+
+    ul ul {
+      list-style-type: circle; 
+      padding-left: 20px; 
+    }
+  </style>
+</head>
+<body>
+  <h2>What Is The Unified Namespace (UNS)?</h2>
+  <ul>
+    <li>The structure of your business and all of the events</li>
+    <li>A single source of truth for all data and information of the business</li>
+    <li>The current state of the business, all events, data and information models contextualized and normalized</li>
+    <li>The place where the current state of the business lives</li>
+    <li>The hub through which the smart things in your business communicate with one another</li>
+    <li>The architectural foundation of your Industry 4.0 and Digital Transformation initiative (Digital Strategy)</li>
+  </ul>
+
+  <h2>Why Do We Need a Unified Namespace?</h2>
+  <ul>
+    <li>Scalability</li>
+    <li>Normalization</li>
+    <li>Time to Value</li>
+    <li>Security</li>
+    <li>Agility</li>
+  </ul>
+
+  <h2>How Does The Unified Namespace Work?</h2>
+  <ul>
+    <li>The smart things in your business communicate with one another via a common IIoT protocol and leveraging a common standard (Minimum Technical Requirements)</li>
+    <li>Data that originates from a smart thing that does not support the minimum technical requirements must be integrated via a gateway that converts the protocol and standard the 'Thing' does support to the protocol and standard the organization has adopted</li>
+    <li>The smart things in your organization publish updates to the UNS as they happen to a pre-defined location(s) within the namespace that is configured when the smart thing is plugged into this infrastructure</li>
+    <li>The data and information in the UNS is organized like your business</li>
+  </ul>
+
+  <h2>What Does the UNS Look Like?</h2>
+  <p>An UNS is an architecture first and foremost. UNS is semantically organized like your business. Within the semantic hierarchy exists functional, descriptive and informative namespaces that serve functions in the business.  The semantic hierarchy makes it easy for consumers -- software, hardware or human -- to find the data and information they need and subscribe to it.  The functions, descriptions and information are all modeled to represent the reality in the organization right now.  We call this single source of truth for data and information in CURRENT state.  UNS is always real-time.  How a UNS is semantically organized depends on the organization, but in Industry, ISA-95 part 2 is the most common structure.  In non-industrial orgs, the semantic hierarchy can be structured however the organization sees fit. </p>
+  <p>For instance, if we were to map the 4.0 Solutions company to a UNS, it might look something like this:</p>
+  <ul>
+    <li>4.0 Solutions
+      <ul>
+        <li>Organization
+          <ul>
+            <li>IT</li>
+            <li>Operations</li>
+            <li>Finance</li>
+            <li>Legal</li>
+            <li>Marketing</li>
+            <li>Solutions Development</li>
+            <li>Engineering
+              <ul>
+                <li>Development</li>
+                <li>Testing</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>IIoT University
+          <ul>
+            <li>Mastermind</li>
+            <li>Mentorship</li>
+            <li>KPIs
+              <ul>
+                <li>SalesByDay</li>
+                <li>SubscriptionsByDay</li>
+                <li>Forecast
+                  <ul>
+                    <li>30 Day PipeLine</li>
+                    <li>60 Day PipeLine</li>
+                    <li>Cash Flow</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>ProveIt Conference
+          <ul>
+            <li>KPIs</li>
+            <li>Reports</li>
+            <li>Sponsors</li>
+            <li>Attendees</li>
+            <li>Financials</li>
+          </ul>
+        </li>
+        <li>Consulting
+          <ul>
+            <li>DTMA</li>
+            <li>Speaking</li>
+            <li>Financials</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Key Concepts</h2>
+  <p>To fully understand the UNS, it's important to grasp the following key concepts:</p>
+  
+  <h3>Semantic Hierarchy</h3>
+  <p>The Semantic Hierarchy is the foundation of the UNS. It is a hierarchical structure that organizes data and information in a way that is meaningful to the business. The Semantic Hierarchy is typically based on the organizational structure of the business, but it can also be based on other factors, such as the types of data and information being collected.</p>
+
+  <h3>Descriptive Namespace</h3>
+  <p>A descriptive namespace in the context of a Unified Namespace (UNS) is a structured collection of mostly static data and information that describes an asset, system or function. Examples include an asset's name, ID, location, OEM (Original Equipment Manufacturer), and operational in service date. This namespace provides essential identifying information that remains relatively unchanged and is used for system context and reference.</p>
+  <h3>Functional Namespace</h3>
+  <p>A functional namespace in the context of a Unified Namespace (UNS) is used to model the functions of a business, process, or system. It represents the operational aspects and actions that the system performs. Examples of functional namespaces include OEE (Overall Equipment Effectiveness), Production Line, Change-over, Edge Data Ingress, and Roll Consumption. These namespaces capture real-time functional data, from various producers, and convert the data for a business function, enabling the monitoring and management of key business processes and system performance.</p>
+  <h3>Informative Namespace</h3>
+  <p>An informative namespace in the context of a Unified Namespace (UNS) is used to model and house data specifically for consumption by a consumer, such as an operator, dashboard, or system endpoint. It is designed to present aggregated, actionable information derived from various sources. Common examples of informative namespaces include Dashboard, Transaction, and Endpoint, where data is structured for easy interpretation and decision-making by users or systems.</p>
+
+  <h2>Getting Started Building a UNS in Industry</h2>
+  <p>Here are some practical steps to get started building a UNS in an industrial setting:</p>
+  <ul>
+    <li>Define Purpose -- what are we trying to achieve and why?</li>
+    <li>Define Namespace Type</li>
+    <li>Common Topics, Tags, Parameter Types
+      <ul>
+        <li>Inputs</li>
+        <li>Internal</li>
+        <li>Outputs</li>
+      </ul>
+    </li>
+    <li>Build</li>
+    <li>Review</li>
+  </ul>
+
+  <h3>Example</h3>
+  <ul>
+    <li>Enterprise
+      <ul>
+        <li>Site
+          <ul>
+            <li>Area
+              <ul>
+                <li>Press 103 (Semantic Hierarchy -- Line)</li>
+                  <ul>
+                    <li>Dashboard (Informative)</li>
+                    <li>Line (Functional)</li>
+                    <li>MachineSchedule (Functional)</li>
+                    <li>EDGE (Functional)</li>
+                    <li>Order Entry MQTT (Functional)</li>
+                    <li>Roll Consumption (Functional)</li>
+                    <li>Roll Production (Functional)</li>
+                    <li>Running Roll Information (Informative)</li>
+                    <li>Shift Change (Functional)</li>
+                    <li>Special Instructions (Informative)</li>
+                    <li>UI (Definitional)</li>
+                  </ul>  
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h2>Why UNS and How Do I Learn More?</h2>
+  <p>We've just scratched the surface of the Unified Namespace (UNS) in this introduction. UNS is a powerful architecture that offers much more than what we've covered here. It enables seamless integration of data and information across your entire business, facilitating better decision-making, improved efficiency, and enhanced scalability. No doubt, you have a lot of questions. We have provided some references below.</p>
+
+  <p>To learn more about UNS and its potential benefits, we encourage you to explore the following resources:</p>
+  <ul>
+    <li><a href="https://iiot.university/" target="_blank">IIoT University</a>: Access comprehensive courses and resources on UNS and other Industry 4.0 topics. There is a free IIoT Mini Course that you can direct people to if they have more questions about Industry 4.0, Digital Transformation, or Unified Namespace.</li>
+    <li><a href="https://www.youtube.com/@4.0Solutions" target="_blank">4.0 Solutions YouTube Channel</a>: Find informative videos and tutorials on UNS and related concepts.</li>
+  </ul>
+
+  <p>In the Demo Tree above, pay close attention to the S88, ISO55001, and BigQuery namespaces. These are examples of endpoints designed for external consumers like compliance, quality, and big data software. They provide access to contextualized and normalized data and information, demonstrating the power of UNS for integration and interoperability.</p>
+
+  <p>We hope this introduction has sparked your interest in UNS. By embracing this powerful architecture, you can unlock new levels of efficiency, agility, and innovation in your organization.</p>
+</body>
+</html>

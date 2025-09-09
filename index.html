@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>UNIFIED    NAMESPACE</title>
+
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=   
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NC5G557Q');</script>   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css"    />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+
+  <script src="https://virtualfactory.online:3000/socket.io/socket.io.js"></script>   
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+
+    #mqttTree {
+      width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header Styles */
+    .header {
+      background-color: #f8f8f8; /* Light background color */
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header a {  /* Style the link */
+      display: block; /* Make the link take up the full width */
+      text-decoration: none; /* Remove underline from link */
+    }
+
+    .header img {
+      max-width: 200px; /* Adjust logo size as needed */
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      color: #007bff; /* Blue color */
+      font-size: 2em;
+      margin: 0;
+    }
+
+    .header h2 {
+      color: #0056b3; /* Slightly lighter blue */
+      font-size: 1.5em;
+      margin: 5px 0;
+    }
+
+    #mqttTree .wrap-text > a { 
+      white-space: normal; 
+      word-break: break-all; 
+    }
+
+    /* Apply flexbox directly to the iframe */
+    iframe { 
+      display: flex;
+      flex-direction: column; 
+      height: calc(100vh - 140px); /* Adjust the height calculation as needed */
+      width: 90%;
+      margin: 30px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC5G557Q"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <div class="header">
+    <a href="https://iiot.university/" target="_blank">
+      <img src="4.0 logo f2.png" alt="4.0 Solutions Logo">
+    </a>
+    <h1>UNIFIED NAMESPACE</h1>
+    <h2>NAMESPACES UPDATE EVERY TEN SECONDS</h2>
+  </div>
+
+  <div id="mqttTree"></div>
+
+  <iframe src="uns.html"  frameborder="0"></iframe> 
+
+  <script src="script.js"></script>
+</body>
+</html>
